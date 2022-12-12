@@ -30,3 +30,14 @@ design.addEventListener('animationend', scaleHandler)
 function scaleHandler(){
   design.classList.toggle('scale')
 }
+
+//interactie 3//
+
+let btnAnd = document.querySelector('a:nth-of-type(3)')
+
+btnAnd.addEventListener('click', shakeHandler)
+btnAnd.addEventListener('animationend', shakeHandler)
+
+function shakeHandler(){
+  btnAnd.classList.toggle('shake')
+}

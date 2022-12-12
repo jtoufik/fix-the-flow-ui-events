@@ -118,9 +118,9 @@ a:nth-of-type(1) {
 
 a:nth-of-type(2) {
   position: relative;
-  background: var(--highlight-secondary);
+  background: rgb(255, 217, 0);
   color: var(--secondary);
-  border-color: var(--secondary);
+  border-color: rgb(255, 217, 0);
 }
 
 .scale {
@@ -137,5 +137,38 @@ a:nth-of-type(2) {
 
   100% {
     transform: scale(1, 1);
+  }
+}
+
+/* Animatie 3 */
+
+a:nth-of-type(3) {
+  position: relative;
+  background: red;
+  color: var(--secondary);
+  border-color: red;
+}
+
+.shake{
+  animation-name: shake;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+
+  30% {
+    transform: scale(1, 1) translateY(-0.5rem) rotate(-80deg);
+  }
+
+  50% {
+    transform: scale(1.1) translateY(3rem) rotate(40deg);
+  }
+
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
   }
 }
