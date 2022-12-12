@@ -18,3 +18,15 @@ frontend.addEventListener('animationend', rotateHandler)
 function rotateHandler(){
   frontend.classList.toggle('rotate')
 }
+
+
+//interactie 2//
+
+let design = document.querySelector('a:nth-of-type(2)')
+
+design.addEventListener('click', scaleHandler)
+design.addEventListener('animationend', scaleHandler)
+
+function scaleHandler(){
+  design.classList.toggle('scale')
+}
