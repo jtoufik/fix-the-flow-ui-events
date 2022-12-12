@@ -79,3 +79,35 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+a:nth-of-type(1) {
+  position: relative;
+  background: var(--highlight-primary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotate {
+
+  30% {
+    transform: scale(1.1) translateY(-1rem) rotate(40deg);
+  }
+
+  50% {
+    transform: scale(1, 1) translateY(-0.5rem) rotate(-40deg);
+  }
+
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+}
