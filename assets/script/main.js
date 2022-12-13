@@ -35,9 +35,20 @@ function scaleHandler(){
 
 let btnAnd = document.querySelector('a:nth-of-type(3)')
 
-btnAnd.addEventListener('click', shakeHandler)
+btnAnd.addEventListener('dblclick', shakeHandler)
 btnAnd.addEventListener('animationend', shakeHandler)
 
 function shakeHandler(){
   btnAnd.classList.toggle('shake')
+}
+
+//interactie 4//
+
+let develop = document.querySelector('a:nth-of-type(4)')
+
+develop.addEventListener('click', flipHandler)
+develop.addEventListener('animationend', flipHandler)
+
+function flipHandler(){
+  develop.classList.toggle('flip')
 }

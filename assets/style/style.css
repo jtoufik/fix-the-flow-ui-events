@@ -172,3 +172,44 @@ a:nth-of-type(3) {
     transform: scale(1, 1) translateY(0);
   }
 }
+
+/* Animatie 4 */
+
+a:nth-of-type(4) {
+  position: relative;
+  background: purple;
+  color: var(--secondary);
+  border-color: purple;
+}
+
+.flip{
+  animation-name: flip;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.flip:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #8e44ad;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.flip:hover {
+  color: #fff;
+}
+.flip:hover:after {
+  width: 100%;
+}
+
