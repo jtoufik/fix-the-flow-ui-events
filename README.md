@@ -1,6 +1,6 @@
 > _Fork_ deze deeltaak en ga aan de slag. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Micro-interacties
+# UI micro-interacties
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 <img width="434" alt="Scherm­afbeelding 2023-01-30 om 20 38 27" src="https://user-images.githubusercontent.com/112856590/215578378-c368a761-3ac1-4414-beac-41cd1fb9b5a2.png">
